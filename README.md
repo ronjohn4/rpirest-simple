@@ -5,7 +5,7 @@ There are 2 main components, RPiServer runs on the Raspberry Pi and exposes a se
 get/set the Raspberry Pi pin state.
 Both Server and Client are written for Python 3.
 
-![RPiREST Data Flow](https://github.com/ronjohn4/RPiREST/blob/master/RPiREST-Simple.png)
+![RPiREST-Simple Data Flow](rpirest-simple.png)
 
 Out of scope for RpiREST-Simple are:
 - call back functions for the client to be notified of pin changes
