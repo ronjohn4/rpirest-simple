@@ -1,0 +1,31 @@
+<title>RPi Client</title>
+<h1>RPi-REST Client</h1>
+<table border="1">
+    <tr>
+        <th><ul>Pin</ul></th>
+        <th>Direction</th>
+        <th>State</th>
+        <th>action</th>
+    </tr>
+
+{% for pin in pins %}
+    <tr>
+        <td>{{ pins[pin].name }}</td>
+        <td>{{ pins[pin].direction }}</td>
+        <td id={{'outputpin' + pin}}>{{ pins[pin].state }}
+        <td>
+            {% if pins[pin].direction == false %}
+                {% if pins[pin].state == true %}
+                    <a href="/pinchange/{{pin}}/0">Turn off</a>
+                {% else %}
+                    <a href="/pinchange/{{pin}}/1">Turn on</a>
+                {% endif %}
+            {% else %}
+                Display only
+            {% endif %}
+        </td>
+    </tr>
+
+{% endfor %}
+</table>
+

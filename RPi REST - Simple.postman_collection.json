@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "5afa8cb5-8ddb-0c20-1b02-be3d6985365d",
+		"name": "RPi REST - Simple",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Pins Raw State",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://10.0.0.11/gpio/api/v1.0/pins/getstate",
+					"protocol": "http",
+					"host": [
+						"10",
+						"0",
+						"0",
+						"11"
+					],
+					"path": [
+						"gpio",
+						"api",
+						"v1.0",
+						"pins",
+						"getstate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pins 16 on",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://10.0.0.11/gpio/api/v1.0/pins/24/1",
+					"protocol": "http",
+					"host": [
+						"10",
+						"0",
+						"0",
+						"11"
+					],
+					"path": [
+						"gpio",
+						"api",
+						"v1.0",
+						"pins",
+						"24",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pins 16 off",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://10.0.0.11/gpio/api/v1.0/pins/24/0",
+					"protocol": "http",
+					"host": [
+						"10",
+						"0",
+						"0",
+						"11"
+					],
+					"path": [
+						"gpio",
+						"api",
+						"v1.0",
+						"pins",
+						"24",
+						"0"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "889df5ba-6e7f-48f6-a1fd-1952257ee34d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "93334c4d-ba1d-4d51-aec9-b192b2e9ad65",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
